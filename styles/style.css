@@ -1,10 +1,66 @@
-/*
-Colors to use:
-dark blue: #06365f
-light blue: #1c5380
-*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --main-theme:#06365f;
+  --lighter-theme:#1c5380;
+}
+
 
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, var(--main-theme)0%, var(--lighter-theme)30%, white 30%, white 100%);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+li, h2 {
+  color: var(--main-theme);
+}
+
+main {
+  display: flex;
+  padding: 40px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
+.main-button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.main-button img {
+  display: block;
+}
+
+#main-text {
+  background-color: white;
+}
+
+#content {
+  width: 50%;
 }
